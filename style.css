@@ -1536,7 +1536,7 @@ footer {
   transform: scale(1);
 }
 
-/* ============ PUBLIKASI / TATA TERTIB ============ */
+/* ============TATA TERTIB ============ */
 .tata-tertib-item {
   opacity: 0;
   transform: translateY(40px);
@@ -1546,4 +1546,7 @@ footer {
   opacity: 1;
   transform: translateY(0);
 }
+
+
+
 

@@ -840,7 +840,7 @@ Pararel 3 Kelas 11
     <section id="publikasi" class="publication-section">
         <h2 class="section-title">Publikasi & Berita Terbaru</h2>
     
-        <div class="publication-container">
+        <div class="publication-container publication-section">
             
             <div class="featured-post-card">
                 <div class="featured-image-box">
@@ -1269,7 +1269,27 @@ document.addEventListener('DOMContentLoaded', () => {
   document.querySelectorAll('.about-left, .about-right, .visi-misi').forEach(el => observer.observe(el));
 
   // KEGIATAN: filter + foto
-  document.querySelectorAll('.kegiatan-filter, .kegiatan-foto').forEach(el => observer.observe(el));
+  const kegiatanSection = document.querySelector('#kegiatan');
+if (kegiatanSection) {
+  const kegiatanObserver = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        // kasih sedikit jeda biar CSS transition kebaca
+        setTimeout(() => {
+          kegiatanSection.querySelectorAll('.kegiatan-filter, .kegiatan-foto')
+            .forEach(el => el.classList.add('revealed'));
+        }, 80); // ⬅️ 80ms delay = animasi zoom jadi kebaca
+        kegiatanObserver.unobserve(entry.target);
+      }
+    });
+  }, {
+    threshold: 0.05,
+    rootMargin: '-100px 0px'
+  });
+
+  kegiatanObserver.observe(kegiatanSection);
+}
+
 
   // PUBLIKASI: tiap item muncul satu-satu (staggered delay)
   const tataTertibItems = document.querySelectorAll('.tata-tertib-item');
