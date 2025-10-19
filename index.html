@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <title> Website-Kesiswaan, SMAN 103 JAKARTA </title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kesiswaan SMAN 103 Jakarta</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="icon" type="image/png" href="img/image_e13ee3.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <header>
+        <div class="logo-container">
+            <img src="img/logo.png" alt="Logo SMAN 103" class="logo">
+            <span class="site-name">KESISWAAN SMAN 103 JAKARTA</span>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="#about" onclick="showSection('about')">TENTANG SEKOLAH</a></li>
+                <li><a href="#profile" onclick="showSection('profile')">PROFIL</a></li>
+                <li><a href="#kegiatan" onclick="showSection('kegiatan')">KEGIATAN</a></li>
+                <li><a href="#tatatertib" onclick="showSection('tatatertib')">TATA TERTIB</a></li>
+                <li><a href="#publikasi" onclick="showSection('publikasi')">PUBLIKASI</a></li>
+                <li><a href="#" onclick="showSection('kontak')">KONTAK</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="hero-section">
+        
+        <h1 class="school-name">SMA NEGERI 103 JAKARTA</h1>
+
+        <div class="search-container">
+            <input type="text" placeholder="cari informasi tentang kesiswaan" class="search-input">
+            <button class="search-button">Cari</button>
+        </div>
+    </main>
+
+ <section id="about" class="about-section">
+        <h2 class="section-title">TENTANG KESISWAAN SMAN 103 JAKARTA</h2>
+        
+        <div class="about-container">
+
+            <div class="about-content">
+                <div class="intro-section">
+                    <p class="intro-text">
+                        SMAN 103 Jakarta berdiri pada 6 Oktober 1989 di atas lahan seluas 4988 m². Awalnya bernama SMA Negeri Klender, sekolah ini diresmikan menjadi SMA Negeri 103 Jakarta pada 11 September 1990 oleh Gubernur DKI Jakarta, Bapak Wiyogo Atmodarminto. Kami berkomitmen untuk memberikan pendidikan berkualitas tinggi dengan kurikulum yang disesuaikan untuk memenuhi kebutuhan akademik dan non-akademik siswa.
+                    </p>
+
+                    <div class="about-image-box">
+                        <img src="img/cecep.jpeg" alt="Gedung SMAN 103" class="about-image">
+                    </div>
+                </div>
+
+
+            </div>
+
+            <h3 class="card-title">Visi & Misi Kami</h3>
+            <div class="vision-mission-grid">
+                <div class="mission-box">
+                    <div class="Visi">
+                        <h4>Visi</h4>
+                        <p>Unggul Dalam Akademik dan Non Akademik Berlandaskan Profil Pelajar Pancasila</p>
+                    </div>
+                    <h4>Misi</h4>
+                    <ul>
+                        <li>Meningkatkan keimanan dan ketakwaan peserta didik melalui perilaku religius dalam kehidupan sehari-hari.</li>
+                        <li>Menyelenggarakan pembelajaran secara efektif, efisien dan bermakna sehingga peserta didik memiliki kemampuan berpikir kritis dan kreatif.</li>
+                        <li>Menyelenggarakan pengembangan diri sehingga peserta didik dapat berkembang secara optimal sesuai dengan minat dan bakat melalui kegiatan bimbingan dan ekstrakurikuler.</li>
+                        <li>Bergotong royong dalam mewujudkan lingkungan sekolah yang aman dan nyaman.</li>
+                        <li>Meningkatkan keselarasan dalam berkebhinekaan global.</li>
+                    </ul>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <section id="profile" class="profile-section">
+        <h2 class="section-title">Guru dan Tenaga Kependidikan</h2>
+        
+        <div class="profile-container">
+            
+            <button class="nav-arrow left">
+                &#10094; 
+            </button>
+            
+            <div class="profile-carousel">
+                
+                <div class="profile-card" data-category="guru">
+                    <div class="profile-image-box">
+                        <img src="img/suparini.jpeg" alt="Suparini, M.Pd" class="profile-image">
+                    </div>
+                    <h4 class="profile-name">Suparini, M.Pd</h4>
+                    <p class="profile-title">Kepala Sekolah</p>
+                </div>
+                    <div class="profile-card" data-category="guru">
+                    <div class="profile-image-box">
+                        <img src="img/martin.jpeg" alt="Martin Malau, S.Pd" class="profile-image">
+                    </div>
+                    <h4 class="profile-name">Martin Malau, S.Pd</h4>
+                    <p class="profile-title">Kepala Sub Bagian Tata Usaha</p>
+                </div>
+                <div class="profile-card" data-category="guru">
+                    <div class="profile-image-box">
+                        <img src="img/cecep2.jpeg" alt="Cecep Irawan, S.Pd" class="profile-image">
+                    </div>
+                    <h4 class="profile-name">Cecep Irwan Irawan, S.Pd</h4>
+                    <p class="profile-title">Wakil Bidang Kesiswaan</p>
+                </div>
+    
+                <div class="profile-card" data-category="guru">
+                    <div class="profile-image-box">
+                        <img src="img/meto.jpeg" alt="Meto Firmansyah, S.Kom" class="profile-image">
+                    </div>
+                    <h4 class="profile-name">Meto Firmansyah, S.Kom</h4>
+                    <p class="profile-title">Wakil Bidang Kurikulum</p>
+                </div>
+                
+                <div class="profile-card" data-category="guru">
+                    <div class="profile-image-box">
+                        <img src="img/irawan.jpeg" alt="Irawan Dwi Adiwidiyanto, S.Pd" class="profile-image">
+                    </div>
+                    <h4 class="profile-name">Irawan Dwi Adiwidiyanto, S.Pd</h4>
+                    <p class="profile-title">Wakil Sarana Prasarana</p>
+                </div>
+                
+                <div class="profile-card" data-category="guru">
+                    <div class="profile-image-box">
+                        <img src="img/bu chandra (1).jpeg" alt="Suparini, M.Pd" class="profile-image">
+                    </div>
+                    <h4 class="profile-name">Chandra D. K. Wulan</h4>
+                    <p class="profile-title">Staf Kesiswaan Pembina OSIS & Ekstrakulikuler </p>
+                </div>
+                
+                <div class="profile-card" data-category="guru">
+                    <div class="profile-image-box placeholder-image">
+                         <img src="img/yuni.jpeg" alt="Yuniani, S.Kom" class="profile-image">
+                        </div>
+                    <h4 class="profile-name">Yuniati, S.Kom</h4>
+                    <p class="profile-title">Guru Informatika / Wali Kelas XI-F1</p>
+                </div>
+                
+        
+            </div>
+            
+            <button class="nav-arrow right">
+                &#10095;
+            </button>
+            
+        </div>                 <div class="stats-counter-section">
+            <div class="stats-container">
+                
+                <div class="stat-card">
+                    <span class="stat-number" data-target="767">700</span>
+                    <p class="stat-label">Jumlah Murid Aktif</p>
+                </div>
+                
+                <div class="stat-card">
+                    <span class="stat-number" data-target="98">95</span>
+                    <p class="stat-label">Nilai Akreditasi (A)</p>
+                </div>
+                
+                <div class="stat-card">
+                    <span class="stat-number" data-target="75">70</span>
+                    <p class="stat-label">Guru Bersertifikasi Pendidik</p>
+                </div>
+                
+                <div class="stat-card">
+                    <span class="stat-number" data-target="120">100</span>
+                    <p class="stat-label">Total Prestasi Regional/Nasional</p>
+                </div>
+
+            </div>
+        </div>
+
+    </section>
+        <section id="kegiatan" class="activity-section">
+        <h2 class="section-title">Kegiatan dan Prestasi</h2>
+    
+        <div class="activity-tabs">
+            <button class="tab-button active" data-filter="all-activity">SEMUA</button>
+            <button class="tab-button" data-filter="ekskul">EKSTRAKURIKULER</button>
+            <button class="tab-button" data-filter="acara">ACARA SEKOLAH</button>
+            <button class="tab-button" data-filter="prestasi">PRESTASI</button>
+        </div>
+    
+        <div class="activity-grid-container">
+
+            <div class="activity-card" data-category="ekskul">
+  <div class="activity-image-box">
+    <img src="img/rohis.jpeg" alt="Ekstrakurikuler Rohis" class="activity-image">
+    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+  </div>
+  <div class="activity-content">
+    <h4 class="activity-title">Ekstrakurikuler ROHIS</h4>
+    <p class="activity-date">Rutin setiap hari Jum'at</p>
+    <p class="activity-description">Membentuk pribadi muslim yang berintegritas, berilmu, dan berakhlak mulia.</p>
+    <a href="https://www.instagram.com/rohis.sman103jkt/" 
+       class="read-more-btn" 
+       target="_blank">Lihat Detail &rarr;
+    </a>
+  </div>
+</div>
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/rohkris.jpeg" alt="Ekstrakurikuler ROHKRIS" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+               <div class="activity-content">
+                    <h4 class="activity-title">ROHKRIS SMAN 103 Jakarta</h4>
+                    <p class="activity-date">Rutin setiap hari Rabu, Kamis, Jum'at (siang)</p>
+                    <p class="activity-description">Menumbuhkan semangat iman dan karakter Kristiani yang penuh kasih dan tanggung jawab.</p>
+                    <a href="https://www.instagram.com/rohkris_103/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/pramuka.jpeg" alt="Ekstrakurikuler Pramuka" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Pramuka</h4>
+                    <p class="activity-date">Rutin setiap hari Rabu Sore</p>
+                    <p class="activity-description">Kegiatan kepramukaan yang melatih kepemimpinan, kemandirian, dan kerja sama tim.</p>
+                    <a href="https://www.instagram.com/adisatyakencana.103jkt/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/paskibra.jpeg" alt="Ekstrakurikuler Paskibra" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Paskibra</h4>
+                    <p class="activity-date">Rutin setiap hari Sabtu</p>
+                    <p class="activity-description">Menanamkan disiplin, tanggung jawab, dan semangat nasionalisme melalui kegiatan pengibaran bendera.</p>
+                    <a href="https://www.instagram.com/weyoungsega/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/ratohjaroe.jpeg" alt="Ekstrakurikuler Ratoh Jaore" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Ratoh Jaroe</h4>
+                    <p class="activity-date">Rutin setiap hari Selasa atau Kamis</p>
+                    <p class="activity-description">Menumbuhkan semangat seni dan melestarikan budaya Aceh melalui tarian Ratoh Jaroe yang mencerminkan kekompakan, disiplin, dan keindahan gerak</p>
+                    <a href="https://www.instagram.com/bycr103/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/samancowo.jpeg" alt="Ekstrakurikuler Saman" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Saman</h4>
+                    <p class="activity-date">Rutin setiap hari Kamis</p>
+                    <p class="activity-description">Menampilkan kekompakan dan ketegasan gerak sebagai wujud pelestarian budaya serta semangat kebersamaan</p>
+                    <a href="https://www.instagram.com/saman_sega/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+        <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/taritradisional.jpeg" alt="Ekstrakurikuler Tari Tradisional" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Tari Tradisional</h4>
+                    <p class="activity-date">Rutin setiap hari Jum'at</p>
+                    <p class="activity-description">Melestarikan warisan budaya Indonesia melalui seni tari tradisional yang anggun, bermakna, dan mencerminkan jati diri bangsa.</p>
+                    <a href="https://www.instagram.com/nrityamandapa.103/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+             <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/moderndance.jpeg" alt="Ekstrakurikuler Modern Dance" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Modern Dance</h4>
+                    <p class="activity-date">Rutin setiap hari Senin</p>
+                    <p class="activity-description">Menyalurkan bakat dan ekspresi siswa melalui gerakan tari modern yang kreatif, energik, dan penuh semangat kebersamaan.</p>
+                    <a href="https://www.instagram.com/terpsichore.103/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+             <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/basket.jpeg" alt="Ekstrakurikuler Basket" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Basket</h4>
+                    <p class="activity-date">Rutin setiap hari Senin</p>
+                    <p class="activity-description">Mengembangkan semangat sportivitas, kerja sama, dan disiplin melalui olahraga basket yang menumbuhkan jiwa kompetitif dan kebersamaan.</p>
+                    <a href="https://www.instagram.com/segabasketball/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/voli.jpeg" alt="Ekstrakurikuler Voli" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Voli</h4>
+                    <p class="activity-date">Rutin setiap hari Selasa</p>
+                    <p class="activity-description">Melatih kekompakan, konsentrasi, dan ketangkasan melalui olahraga voli yang menumbuhkan rasa percaya diri dan sportivitas tinggi.</p>
+                    <a href="https://www.instagram.com/segavolleyball/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/futsal.jpeg" alt="Ekstrakurikuler Badminton" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Futsal</h4>
+                    <p class="activity-date">Rutin setiap hari Jumat</p>
+                    <p class="activity-description">Mengembangkan kerja sama tim, ketangkasan, dan sportivitas melalui permainan futsal yang penuh semangat.</p>
+                    <a href="https://www.instagram.com/segafutsalll/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/badminton.jpeg" alt="Ekstrakurikuler Badminton" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Badminton</h4>
+                    <p class="activity-date">Rutin setiap hari Sabtu</p>
+                    <p class="activity-description">Melatih fokus, kecepatan, dan ketepatan sambil menumbuhkan jiwa kompetitif dan sportivitas.</p>
+                    <a href="https://www.instagram.com/badminton.sega/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/silat.jpeg" alt="Ekstrakurikuler Silat" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Silat</h4>
+                    <p class="activity-date">Rutin setiap hari Kamis</p>
+                    <p class="activity-description">Melestarikan seni bela diri tradisional Indonesia yang menanamkan nilai disiplin, kepercayaan diri, dan semangat menjaga budaya bangsa.</p>
+                    <a href="https://www.instagram.com/asset.103/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+             <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/taekwondo.jpeg" alt="Ekstrakurikuler Taekwondo" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Taekwondo</h4>
+                    <p class="activity-date">Rutin setiap hari Selasa</p>
+                    <p class="activity-description">Membentuk mental dan fisik yang kuat melalui seni bela diri Taekwondo yang menanamkan sportivitas, disiplin, dan pengendalian diri.</p>
+                    <a href="https://www.instagram.com/sega_taekwondo/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/muaythai.jpeg" alt="Ekstrakurikuler Muaythai" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Muaythai</h4>
+                    <p class="activity-date">Rutin setiap hari Selasa</p>
+                    <p class="activity-description">Melatih kekuatan, ketangkasan, dan semangat pantang menyerah melalui seni bela diri asal Thailand ini.</p>
+                    <a href="https://www.instagram.com/muaysega/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/militaryband.jpeg" alt="Ekstrakurikuler Military Band" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Military Band</h4>
+                    <p class="activity-date">Rutin setiap hari Jum'at</p>
+                    <p class="activity-description">Menumbuhkan disiplin, ketegasan, dan jiwa patriotik melalui penampilan musik bergaya militer yang memadukan kekompakan, kehormatan, dan semangat kebangsaan.</p>
+                    <a href="https://www.instagram.com/segantara103/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/padus.jpeg" alt="Ekstrakurikuler Paduan Suara" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Paduan Suara</h4>
+                    <p class="activity-date">Rutin setiap hari Kamis</p>
+                    <p class="activity-description">Membangun keharmonisan dan kerja sama melalui seni bernyanyi bersama yang menumbuhkan rasa percaya diri dan kebersamaan.</p>
+                    <a href="https://www.instagram.com/rasegachoir_/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+               <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/band.jpeg" alt="Ekstrakurikuler Band" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Band</h4>
+                    <p class="activity-date">Rutin setiap hari Jum'at</p>
+                    <p class="activity-description">Menjadi wadah bagi siswa untuk menyalurkan bakat bermusik, berkreasi, dan berekspresi melalui harmoni nada yang menyatukan semangat muda.</p>
+                    <a href="https://www.instagram.com/sega.core/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+             <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/teater.jpeg" alt="Ekstrakurikuler Theater" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Theater</h4>
+                    <p class="activity-date">Rutin setiap hari Jum'at</p>
+                    <p class="activity-description">Mengasah kreativitas dan ekspresi diri melalui seni peran yang menumbuhkan rasa percaya diri dan kerja sama.</p>
+                    <a href="https://www.instagram.com/theater103jakarta/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/KIR.jpeg" alt="Ekstrakurikuler KIR" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler KIR</h4>
+                    <p class="activity-date">Rutin setiap hari Selasa</p>
+                    <p class="activity-description">Menumbuhkan semangat berpikir kritis dan inovatif melalui penelitian ilmiah serta penerapan teknologi.</p>
+                    <a href="https://www.instagram.com/kiriousity103/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/pmr.jpeg" alt="Ekstrakurikuler PMR" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler PMR</h4>
+                    <p class="activity-date">Rutin setiap hari Sabtu</p>
+                    <p class="activity-description"Menumbuhkan rasa peduli, tanggung jawab, dan semangat kemanusiaan melalui kegiatan sosial dan pertolongan pertama.</p>
+                    <a href="https://www.instagram.com/reoztrim_103/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+            
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/fragma.jpeg" alt="Ekstrakurikuler Fragma" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Fragma</h4>
+                    <p class="activity-date">Rutin setiap hari Sabtu</p>
+                    <p class="activity-description">Menyalurkan kreativitas dan kepekaan estetika siswa melalui seni memotret yang menangkap momen, emosi, dan cerita di balik setiap gambar.</p>
+                    <a href="https://www.instagram.com/fragmasega/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+            
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/japanclub.jpeg" alt="Ekstrakurikuler Japanese Club" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Japanese Club</h4>
+                    <p class="activity-date">Rutin setiap hari Selasa</p>
+                    <p class="activity-description">Mengenal dan mempelajari budaya Jepang melalui bahasa, seni, serta kegiatan kreatif yang memperluas wawasan dan rasa apresiasi antarbudaya.</p>
+                    <a href="https://www.instagram.com/hyaku.raii/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="ekskul">
+                <div class="activity-image-box">
+                    <img src="img/jermanclub.jpeg" alt="Ekstrakurikuler Jerman Club" class="activity-image">
+                    <span class="activity-tag ekskul">Ekstrakurikuler</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Ekstrakurikuler Jerman Club</h4>
+                    <p class="activity-date">Rutin setiap hari Senin</p>
+                    <p class="activity-description">Mengenal bahasa dan budaya Jerman sambil menumbuhkan wawasan global dan semangat belajar internasional</p>
+                    <a href="https://www.instagram.com/deutschclub103/" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+             <div class="activity-card" data-category="acara">
+                <div class="activity-image-box">
+                    <img src="img/kegiatan ldks.png" alt="Pentas Seni Sekolah" class="activity-image">
+                    <span class="activity-tag acara">Acara Sekolah</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Acara LDKS 2025 SMA Negeri 103 Jakarta</h4>
+                    <p class="activity-date">29-30 Agustus 2025</p>
+                    <p class="activity-description">Kegiatan LDKS SMAN 103 bertujuan untuk membentuk jiwa kepemimpinan, tanggung jawab, dan disiplin siswa-siswi. Melalui kegiatan ini, para peserta mendapatkan pelatihan mengenai kepemimpinan, kerja sama tim, komunikasi efektif, serta pengambilan keputusan. Kegiatan dilaksanakan selama beberapa hari dengan kombinasi antara sesi indoor (materi) dan outdoor (simulasi serta games kebersamaan).</p>
+                    <a href="https://www.instagram.com/p/DOayF0QEn-U/?igsh=MWpndDIwcGpqbWo1NA==" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="acara">
+                <div class="activity-image-box">
+                    <img src="img/kegiatan pajak.png" alt="Pentas Seni Sekolah" class="activity-image">
+                    <span class="activity-tag acara">Acara Sekolah</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">SMAN 103 Jakarta Berpartisipasi Dalam Kegiatan Pajak</h4>
+                    <p class="activity-date">27 Agustus 2025</p>
+                    <p class="activity-description">Kegiatan Pajak di SMAN 103 merupakan bentuk edukasi siswa mengenai pentingnya kesadaran pajak sejak dini. Biasanya dilaksanakan melalui program “Pajak Bertutur” atau kerja sama dengan Direktorat Jenderal Pajak. Dalam kegiatan ini, siswa mendapat pemahaman tentang fungsi pajak bagi pembangunan negara melalui seminar, diskusi interaktif, dan kuis edukatif.</p>
+                    <a href="https://www.instagram.com/p/DN5uesfErDl/?igsh=MTIyYzNjNzV6Nmwzbg==" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="acara">
+                <div class="activity-image-box">
+                    <img src="img/kegiatan pawai.png" alt="Pentas Seni Sekolah" class="activity-image">
+                    <span class="activity-tag acara">Acara Sekolah</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Kegiatan Pawai Ekstrakulikuler dan Jumat Sehat Aksi Bergizi</h4>
+                    <p class="activity-date">22 Agustus 2025</p>
+                    <p class="activity-description">Kegiatan dimulai dengan senam bersama di pagi hari sebagai bagian dari program Jumat Sehat, diikuti dengan pawai keliling lingkungan sekolah yang menampilkan kreativitas setiap ekstrakurikuler. Setiap ekskul membawa atribut, kostum, dan yel-yel khas mereka sehingga menambah semarak suasana.</p>
+                    <a href="https://www.instagram.com/p/DNssN7_5HZW/?igsh=c3pzcnZtczVpZjRn" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="acara">
+                <div class="activity-image-box">
+                    <img src="img/kegiatan pramuka penegak.png" alt="Pentas Seni Sekolah" class="activity-image">
+                    <span class="activity-tag acara">Acara Sekolah</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Kegiatan Apel Penerimaan Tamu Penegak Pramuka</h4>
+                    <p class="activity-date">27 Agustus 2025</p>
+                    <p class="activity-description">Kegiatan Pramuka Penegak SMAN 103 berfokus pada pembentukan karakter, kemandirian, dan semangat kebangsaan.</p>
+                    <a href="https://www.instagram.com/p/DOaxCiekk_u/?igsh=MXRiNnE1dnZibDJ5eQ=="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+             <div class="activity-card" data-category="acara">
+                <div class="activity-image-box">
+                    <img src="img/sapa prabu kegiatan.png" alt="Pentas Seni Sekolah" class="activity-image">
+                    <span class="activity-tag acara">Acara Sekolah</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Sapa PRABU SMA Negeri 103 Jakarta</h4>
+                    <p class="activity-date">30 September 2025</p>
+                    <p class="activity-description">Kegiatan Sapa Prabu (Pelajar Duta Tramtibun Jakarta) merupakan program kolaborasi antara Satpol PP DKI Jakarta dan SMAN 103 Jakarta yang bertujuan membentuk pelajar sebagai duta ketertiban dan keamanan lingkungan sekolah serta masyarakat.</p>
+                    <a href="https://www.instagram.com/p/DPOmSIYEwx8/?igsh=MWVxYm5wbHllazc3bQ=="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+        
+
+            <div class="activity-card" data-category="prestasi">
+                <div class="activity-image-box">
+                    <img src="img/juara.jpeg" alt="Juara Olimpiade Sains" class="activity-image">
+                    <span class="activity-tag prestasi">Prestasi</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Juara Olimpiade Bela Diri</h4>
+                    <p class="activity-date">Mei 2025</p>
+                    <p class="activity-description">Segenap siswa SMAN 103 Jakarta berhasil meraih juara di kejuaraan kickboxing</p>
+                    <a href="#" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+        <div class="activity-card" data-category="prestasi">
+                <div class="activity-image-box">
+                    <img src="img/prestasi panahan.png" alt="Juara Olimpiade Sains" class="activity-image">
+                    <span class="activity-tag prestasi">Prestasi</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Invitasi Panahan Putri Pelajar DKI Jakarta Series Open 2025 Tingkat Provinsi</h4>
+                    <p class="activity-date">Mei 2025</p>
+                    <p class="activity-description">Zahra Zaskia Mahesa berhasil membuktikan ketangguhannya di arena panahan dengan meraih Juara 2 Compound Putri Total V Beregu dalam ajang bergengsi Invitasi Panahan Pelajar DKI Jakarta Series Open 2025 Tingkat Provinsi</p>
+                    <a href="https://www.instagram.com/p/DNnQvg7RblC/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+             <div class="activity-card" data-category="prestasi">
+                <div class="activity-image-box">
+                    <img src="img/prestasi badminton.png" alt="Juara Olimpiade Sains" class="activity-image">
+                    <span class="activity-tag prestasi">Prestasi</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Juara 1 Provinsi dalam ajang Popprov DKI Jakarta Cabang Olahraga Bulu Tangkis.</h4>
+                    <p class="activity-date">Mei 2025</p>
+                    <p class="activity-description">Keberhasilan ini menjadi bukti nyata kerja keras, kedisiplinan, serta semangat pantang menyerah yang ditunjukkan Ulfia. Prestasi ini tidak hanya mengangkat nama pribadi, tetapi juga mengharumkan nama sekolah di tingkat provinsi.</p>
+                    <a href="https://www.instagram.com/p/DNnQpG8RhFp/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+            
+            <div class="activity-card" data-category="prestasi">
+                <div class="activity-image-box">
+                    <img src="img/prestasi olimpiade.png" alt="Juara Olimpiade Sains" class="activity-image">
+                    <span class="activity-tag prestasi">Prestasi</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">SMAN 103 meraih dua kemenangan di OSK Jakarta Timur.</h4>
+                    <p class="activity-date"> Mei 2025</p>
+                    <p class="activity-description">- Jordan Samuel C. — Matematika - Raka Hasby — Biologi Mereka berhasil membawa pulang kemenangan 
+                        Semangat dan kerja keras mereka terbayarkan dengan hasil yang membanggkan Selamat untuk para pemenang, terus menginspirasi </p>
+                    <a href="https://www.instagram.com/p/DNI7rdwvGwo/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="prestasi">
+                <div class="activity-image-box">
+                    <img src="img/prestasi pararel.png" alt="Juara Olimpiade Sains" class="activity-image">
+                    <span class="activity-tag prestasi">Prestasi</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Para peraih Ranking Paralel SMAN 103 Jakarta Timur buktikan kerja keras tak sia-sia!</h4>
+                    <p class="activity-date">Mei 2025</p>
+                    <p class="activity-description">Pararel 1 Kelas 11
+- Fathan Bintang Arochman (XI-F6)
+Pararel 2 Kelas 11
+- Daaniysa Rayhana Putri (XI-F6)
+Pararel 3 Kelas 11
+- Jordan Samuel Christiawan (XI-F1)
+- Matthew Francesco Lumban Batu (XI-F1)
+</p>
+                    <a href="https://www.instagram.com/p/DNN-zRqxAQy/?utm_source=ig_web_copy_link&igsh=MzRlODBiNWFlZA==" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+            
+            <div class="activity-card" data-category="acara">
+                <div class="activity-image-box">
+                    <img src="img/seincup.jpeg" alt="Pentas Seni Sekolah" class="activity-image">
+                    <span class="activity-tag acara">Acara Sekolah</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Acara classmeet SMAN 103</h4>
+                    <p class="activity-date">17 Agustus 2025</p>
+                    <p class="activity-description">Ajang menunjukan kemampuan siswa baik secara akademik maupun nonakademik dalam bentuk lomba antarkelas</p>
+                    <a href="#" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+            <div class="activity-card" data-category="prestasi">
+                <div class="activity-image-box">
+                    <img src="img/fls3n.jpeg" alt="Ekstrakurikuler Futsal" class="activity-image">
+                    <span class="activity-tag prestasi">Prestasi</span>
+                </div>
+                <div class="activity-content">
+                    <h4 class="activity-title">Juara FLS3N</h4>
+                    <p class="activity-date">bleum tau</p>
+                    <p class="activity-description">Segenap siswa SMAN 103 Jakarta berhasil meraih juara di kejuaraan FLS3N</p>
+                    <a href="#" class="read-more-btn">Lihat Detail &rarr;</a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+    <section id="tatatertib" class="rules-section">
+        <h2 class="section-title">Tata Tertib Kesiswaan</h2>
+    
+        <div class="rules-container">
+            <p class="rules-intro">
+                Setiap siswa SMAN 103 Jakarta wajib mematuhi seluruh peraturan yang berlaku. Klik pada topik di bawah ini untuk melihat detail dan panduan visual.
+            </p>
+    
+            <div class="rules-accordion">
+                
+                <div class="accordion-item">
+    <button class="accordion-header">
+        <span class="rule-title">1. Peraturan Seragam Sekolah</span>
+        <span class="icon-toggle">+</span>
+    </button>
+
+    <div class="accordion-content">
+        <div class="content-body">
+            <p>Untuk menjaga kedisiplinan dan citra sekolah, setiap siswa wajib mengenakan seragam sesuai jadwal dan ketentuan yang berlaku. Berikut adalah detail seragam harian:</p>
+
+            <div class="seragam-scroll-wrapper">
+
+                <h4>Senin & Selasa: Putih Abu-Abu (Lengkap)</h4>
+                <div class="seragam-visual">
+                    <img src="img/senini.jpeg" alt="Seragam Putih Abu-Abu" class="blueprint-image">
+                    <p class="caption">Seragam nasional (Putih Abu-Abu). Lengkap dengan atribut, dasi, dan topi.</p>
+                    <ul class="detail-list">
+                        <li>Pria: Kemeja Putih lengan pendek, celana panjang abu-abu, ikat pinggang, kaos kaki putih, sepatu hitam.</li>
+                        <li>Wanita: Kemeja Putih lengan panjang/pendek, rok panjang/pendek abu-abu, ikat pinggang, kaos kaki putih, sepatu hitam.</li>
+                    </ul>
+                </div>
+                
+                <h4>Rabu: Seragam Pramuka</h4> 
+                <div class="seragam-visual">
+                    <img src="img/rabubu.png" alt="Seragam Pramuka" class="blueprint-image">
+                    <p class="caption">Seragam Pramuka lengkap dengan atribut, setangan leher, dan baret (jika diwajibkan).</p>
+                    <ul class="detail-list">
+                        <li>Ketentuan seragam Pramuka mengikuti aturan Kwartir Nasional.</li>
+                    </ul>
+                </div>
+
+                <h4>Kamis: Putih Abu-Abu dengan Rompi</h4>
+                <div class="seragam-visual">
+                    <img src="img/rompi.png" alt="Seragam Rompi Sekolah" class="blueprint-image">
+                    <p class="caption">Seragam nasional (Putih Abu-Abu). Lengkap dengan atribut, dasi, dan topi dengan tambahan rompi</p>
+                    <ul class="detail-list">
+                        <li>Pria: Kemeja Putih lengan pendek, celana panjang abu-abu, ikat pinggang, kaos kaki putih, sepatu hitam, rompi 103</li>
+                        <li>Wanita: Kemeja Putih lengan panjang/pendek, rok panjang/pendek abu-abu, ikat pinggang, kaos kaki putih, sepatu hitam, rompi 103</li>
+                    </ul>
+                </div>
+                <h4>Jumat: Seragam Khusus (Mingguan)</h4>
+                <p>Jumat dibagi berdasarkan minggu berjalan, dengan penyesuaian untuk siswa Muslim dan Non-Muslim:</p>
+                
+                <div class="seragam-visual">
+                    <p><strong>Jumat Minggu Ke-1 & Ke-2: Seragam Khas Sekolah & Muslimah/Non-Muslimah</strong></p>
+                    <img src="img/jumat1.png" alt="Seragam Khas Sekolah" class="blueprint-image">
+                    <p class="caption">Seragam Khas Sekolah (contoh: Putih-Biru/Hijau) & Seragam Muslimah/Non-Muslimah sesuai ketentuan sekolah.</p>
+                    <ul class="detail-list">
+                        <li><strong>Muslim Pria:</strong> Kemeja Khas Sekolah, celana, peci, atau pakaian muslim.</li>
+                        <li><strong>Muslim Wanita:</strong> Pakaian Muslimah lengkap (gamis/rok panjang dan kerudung), warna disesuaikan.</li>
+                        <li><strong>Non-Muslim:</strong> Seragam Khas Sekolah.</li>
+                    </ul>
+                </div>
+
+                <div class="seragam-visual">
+                    <p><strong>Jumat Minggu Ke-3 & Ke-4: Seragam Batik</strong></p>
+                    <img src="img/jumat2.png" alt="Seragam Batik Sekolah" class="blueprint-image">
+                    <p class="caption">Seragam Batik sekolah resmi. Bawahan tetap abu-abu.</p>
+                    <ul class="detail-list">
+                        <li>Batik: Lengan panjang/pendek (Pria), Lengan panjang/pendek (Wanita).</li>
+                        <li>Bawahan: Celana/Rok Abu-Abu.</li>
+                    </ul>
+                </div>
+
+                <h4>Seragam Olahraga</h4>
+                <div class="seragam-visual">
+                    <img src="img/olga.png" alt="Seragam Olahraga Sekolah" class="blueprint-image">
+                    <p class="caption">Dikenakan saat jam pelajaran olahraga. Disimpan rapi di tas setelah selesai.</p>
+                    <ul class="detail-list">
+                        <li>Warna dan model wajib sesuai dengan standar yang ditetapkan sekolah.</li>
+                        <li>Wajib menggunakan sepatu olahraga yang layak.</li>
+                    </ul>
+                </div>
+
+            </div> 
+            </div>
+    </div>
+</div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="rule-title">2. Kewajiban Kehadiran dan Kedisiplinan</span>
+                        <span class="icon-toggle">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-body">
+                            <p>Siswa wajib hadir di sekolah selambatnya 06:45 WIB. Keterlambatan lebih dari tiga kali tanpa keterangan akan ditindaklanjuti dengan pemanggilan orang tua.</p>
+                            <ul class="detail-list">
+                                <li>Izin tidak masuk wajib disertai surat resmi atau keterangan dokter.</li>
+                                <li>Siswa dilarang keluar lingkungan sekolah selama jam pelajaran tanpa izin dari Guru Piket/Wali Kelas.</li>
+                            </ul>
+                            <p>Siswa wajib mematuhi beberapa ketentuan berikut ini untuk menjaga kedisiplinan, kenyamanan, dan ketertiban. Diantranya :</p>
+                            <ul class="detail-list">
+                                <li>Telepon genggam wajib dikumpulkan di tempat yang disediakan.</li>
+                                <li>Laptop hanya boleh dipakai dengan izin guru matapelajaran.</li>
+                                <li>Saat pergantian jam, Siswa tidak boleh keluar kelas sebelum guru berikutnya datang.</li>
+                                <li>Siswa boleh meninggalkan kelas saat diberi izin guru yang mengajar.</li>
+                                <li>Saat istirahat, Siswa tidak boleh keluar sekolah tanpa izin Guru Piket.</li>
+                                <li>Setelah KBM selesai, kegiatan hanya diperbolehkan untuk ekstrakurikuler hingga pukul 17.00 WIB.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="rule-title">3. Etika dan Pergaulan</span>
+                        <span class="icon-toggle">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-body">
+                            <p>Siswa harus menjunjung tinggi nilai moral dan etika. Dilarang keras melakukan tindakan perundungan (bullying), kekerasan, atau tindakan asusila. Sekolah menjamin lingkungan yang aman dan saling menghormati.</p>
+                            <p>Berikut jenis-jenis pelanggaran yang harus dihindari siswa/i SMAN 103 :</p>
+                            <ul class="detail-list">
+                                <li>A. Pelanggaran Ringan</li>
+                                    <ul>
+                                        <p>Meliputi: seragam tidak sesuai, rambut tidak rapi/diwarnai, dandanan berlebihan, terlambat/tidak hadir tanpa izin, dan tidak ikut kegiatan keagamaan.</p>
+                                    </ul>
+                            </ul>                            
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="accordion-item">
+                    <button class="accordion-header">
+                        <span class="rule-title">4. Menjaga Sarana dan Prasarana Sekolah</span>
+                        <span class="icon-toggle">+</span>
+                    </button>
+                    <div class="accordion-content">
+                        <div class="content-body">
+                            <p>Setiap warga sekolah perlu menggunakan fasilitas yang ada dengan bijak, sesuai dengan fungsinya, serta menghindari tindakan yang dapat merusak seperti mencoret meja, tembok, atau kursi. Kebersihan dan kerapian lingkungan juga harus dijaga, misalnya dengan membuang sampah pada tempatnya, membersihkan kelas setiap hari, serta ikut serta dalam kegiatan kerja bakti sekolah. Selain itu, apabila ditemukan fasilitas yang rusak seperti keran bocor, kabel terkelupas, atau kursi patah, sebaiknya segera dilaporkan kepada guru atau petugas sekolah agar dapat segera diperbaiki. Rasa tanggung jawab dan kepedulian terhadap lingkungan sekolah perlu ditanamkan sejak dini agar seluruh warga sekolah merasa memiliki dan berperan aktif dalam menjaga fasilitas bersama. Dengan adanya perawatan rutin, pengecekan fasilitas secara berkala, dan kegiatan seperti “Jumat Bersih-Bersih”, sarana dan prasarana di SMAN 103 Jakarta dapat terus terpelihara dengan baik dan memberikan kenyamanan bagi seluruh warga sekolah.</p>
+                        </div>
+                    </div>
+                </div>
+    
+            </div>
+            
+            <div class="rules-action">
+                <p>Untuk informasi tata tertib kesiswaan secara lengkap, termasuk daftar sanksi dan penghargaan, silakan unduh dokumen resmi kami.</p>
+                <a href="TATIB sega'25-26.pdf" class="main-cta-button" target="_blank">Unduh Dokumen Tata Tertib Lengkap (PDF)</a>
+            </div>
+            
+        </div>
+    </section>
+    
+    <section id="publikasi" class="publication-section">
+        <h2 class="section-title">Publikasi & Berita Terbaru</h2>
+    
+        <div class="publication-container">
+            
+            <div class="featured-post-card">
+                <div class="featured-image-box">
+                    <img src="img/featured_news.jpg" alt="Kegiatan Siswa Sambut HUT RI" class="featured-image">
+                </div>
+                <div class="featured-content">
+                    <span class="news-tag highlight">Pengumuman Penting</span>
+                    <h3 class="featured-title">Persiapan Pemilihan Ketua Osis dan MPK Tahun Ajaran Baru</h3>
+                    <p class="featured-date">16 Oktober 2025</p>
+                    <p class="featured-summary">Sekolah mengumumkan jadwal lengkap simulasi Asesmen Nasional Berbasis Komputer (ANBK). Semua siswa kelas XI wajib hadir sesuai jadwal yang tertera di papan pengumuman. Simulasi ini penting sebagai tolok ukur kesiapan infrastruktur dan mental siswa.</p>
+                    <a href="#" class="read-more-btn feature-link">Baca Selengkapnya &rarr;</a>
+                </div>
+            </div>
+    
+            <div class="publication-grid">
+                
+                <div class="news-card">
+                    <img src="img/news_ekskul.jpg" alt="Ekskul Futsal Raih Juara" class="news-thumbnail">
+                    <div class="news-content">
+                        <span class="news-tag small">Prestasi</span>
+                        <h4 class="news-title">Tim Futsal Juara Liga Pelajar DKI</h4>
+                        <p class="news-date">28 September 2025</p>
+                    </div>
+                </div>
+    
+                <div class="news-card">
+                    <img src="img/news_pmr.jpg" alt="Kegiatan PMR Sekolah" class="news-thumbnail">
+                    <div class="news-content">
+                        <span class="news-tag small">Kegiatan</span>
+                        <h4 class="news-title">PMR Gelar Pelatihan Bantuan Hidup Dasar</h4>
+                        <p class="news-date">25 September 2025</p>
+                    </div>
+                </div>
+                
+                <div class="news-card">
+                    <img src="img/news_lingkungan.jpg" alt="Aksi Bersih Lingkungan" class="news-thumbnail">
+                    <div class="news-content">
+                        <span class="news-tag small">Lingkungan</span>
+                        <h4 class="news-title">Aksi Jumat Bersih: Komitmen Sekolah Hijau</h4>
+                        <p class="news-date">22 September 2025</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="img/news_motivasi.jpg" alt="Kegiatan Motivasi dan Informasi" class="news-thumbnail">
+                    <div class="news-content">
+                        <span class="news-tag small">Motivasi dan Informasi</span>
+                        <h4 class="news-title">SMAN 103 Jakarta Kedatangan Alumni Lulusan Covid (2021)</h4>
+                        <p class="news-date">17 Oktober 2025</p>
+                    </div>
+                </div>
+
+                <div class="news-card">
+                    <img src="img/news_pencapaian.jpg" alt="Pencapaian SMAN 103 Jakarta" class="news-thumbnail">
+                    <div class="news-content">
+                        <span class="news-tag small">Pencapaian Talkshow Pertama di Jakarta Timur</span>
+                        <h4 class="news-title">SMAN 103 Jakarta, Sekolah Jakarta Timur yang Pertama kali Berhasil Mengadakan Acara Talkshow di Walikota jakarta Timur</h4>
+                        <p class="news-date">04 Oktober 2025</p>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <div class="cta-center">
+                <a href="#" class="main-cta-button">Lihat Semua Arsip Berita</a>
+            </div>
+            
+        </div>
+    </section>
+
+<script>
+    window.onload = () => {
+        const carousel = document.querySelector('.profile-carousel');
+        const leftArrow = document.querySelector('.nav-arrow.left');
+        const rightArrow = document.querySelector('.nav-arrow.right');
+
+        // Nilai offset untuk looping (harus SAMA dengan scroll-padding-left di CSS)
+        const getOffsetValue = () => {
+             // Desktop: 75px (dari 70px + 5px margin), Mobile: 20px (dari 15px + 5px margin)
+            return window.innerWidth > 900 ? 75 : 20;
+        };
+
+        // Hitungan geser (250px lebar kartu + 30px gap) * 1.5
+        const cardWidthWithGap = 280; 
+        const scrollDistance = cardWidthWithGap * 1.5; 
+        const tolerance = 5; 
+
+        // Fungsi Geser KANAN (Looping)
+        rightArrow.addEventListener('click', () => {
+            const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
+
+            if (carousel.scrollLeft >= maxScrollLeft - tolerance) { 
+                // Jika mentok kanan, kembali ke posisi awal (scroll 0, ditahan scroll-padding)
+                carousel.scrollTo({
+                    left: 0, 
+                    behavior: 'smooth'
+                });
+            } else {
+                carousel.scrollBy({
+                    left: scrollDistance, 
+                    behavior: 'smooth'
+                });
+            }
+        });
+
+        // Fungsi Geser KIRI (Looping)
+        leftArrow.addEventListener('click', () => {
+            const offset = getOffsetValue();
+            
+            // JIKA SUDAH MENTOK KIRI (berada di posisi 0, ditahan oleh scroll-padding di 75px/20px)
+            if (carousel.scrollLeft <= offset + tolerance) { 
+                // Loop ke kartu terakhir (posisi terjauh)
+                carousel.scrollTo({
+                    left: carousel.scrollWidth, 
+                    behavior: 'smooth'
+                });
+            } else {
+                carousel.scrollBy({
+                    left: -scrollDistance, 
+                    behavior: 'smooth' 
+                });
+            }
+        });
+        
+        // Script untuk Tab Filtering Kegiatan (TETAP ADA)
+        const activityTabButtons = document.querySelectorAll('.activity-tabs .tab-button');
+        const activityCards = document.querySelectorAll('.activity-card');
+
+        activityTabButtons.forEach(button => {
+            button.addEventListener('click', () => {
+                activityTabButtons.forEach(btn => btn.classList.remove('active'));
+                button.classList.add('active');
+                
+                const filter = button.getAttribute('data-filter');
+                
+                activityCards.forEach(card => {
+                    const category = card.getAttribute('data-category');
+                    if (filter === 'all-activity' || category === filter) {
+                        card.style.display = 'flex'; // Tampilkan sebagai flex
+                    } else {
+                        card.style.display = 'none';
+                    }
+                });
+            });
+        });
+
+
+        // Script untuk Accordion Tata Tertib
+        const accordionHeaders = document.querySelectorAll('.accordion-header');
+
+        accordionHeaders.forEach(header => {
+            header.addEventListener('click', () => {
+                const content = header.nextElementSibling; // Mengambil div .accordion-content
+                
+                // Cek apakah konten saat ini sudah terbuka
+                const isOpen = content.classList.contains('open');
+
+                // Tutup semua konten accordion
+                document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('open'));
+                document.querySelectorAll('.accordion-header').forEach(h => h.classList.remove('active'));
+
+                // Jika konten saat ini tadi tertutup (isOpen = false), maka buka konten ini
+                if (!isOpen) {
+                    content.classList.add('open');
+                    header.classList.add('active');
+                }
+                
+                // Hapus atau jadikan komentar bagian yang membuat scrolling otomatis:
+                /*
+                setTimeout(() => {
+                     header.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }, 450);
+                */
+            });
+        });
+
+// Tambahkan fungsi ini di dalam window.onload = () => { ... } yang sudah ada
+
+const startCounter = (entries, observer) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting) {
+            const element = entry.target;
+            const target = parseInt(element.getAttribute('data-target'));
+            let current = 0;
+            const duration = 2000; // 2 detik
+            const step = target / (duration / 10); // Hitung langkah per 10ms
+
+            const updateCounter = () => {
+                current += step;
+                if (current < target) {
+                    element.textContent = Math.ceil(current);
+                    requestAnimationFrame(updateCounter);
+                } else {
+                    element.textContent = target; // Pastikan angkanya tepat di akhir
+                    observer.unobserve(element); // Stop mengamati setelah selesai hitung
+                }
+            };
+
+            updateCounter();
+        }
+    });
+};
+
+// Pengaturan Intersection Observer
+const statObserver = new IntersectionObserver(startCounter, {
+    root: null, // Mengamati viewport
+    threshold: 0.5 // Mulai menghitung saat 50% elemen terlihat
+});
+
+// Amati setiap elemen statistik
+document.querySelectorAll('.stat-number').forEach(stat => {
+    statObserver.observe(stat);
+});
+
+// Pastikan skrip ini dipanggil saat halaman dimuat
+    };
+</script>
+
+
+</body>
+</html>
