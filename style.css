@@ -1025,19 +1025,7 @@ nav ul li a:hover {
     border: none;
 }
 
-/* Responsif untuk Mobile */
-@media (max-width: 900px) {
-    .contact-section {
-        padding: 50px 20px;
-    }
-    .contact-content-wrapper {
-        flex-direction: column;
-        gap: 30px;
-    }
-    .contact-form-box {
-        order: -1; /* Pindahkan formulir ke atas di mobile */
-    }
-}
+
 
 /* 9. FOOTER */
 
@@ -1147,20 +1135,7 @@ footer {
 }
 
 
-/* Responsif Footer */
-@media (max-width: 768px) {
-    .footer-container {
-        flex-direction: column;
-        padding: 0 20px;
-    }
-    .footer-col.about {
-        max-width: 100%;
-        margin-bottom: 30px;
-    }
-    .footer-col {
-        margin-bottom: 30px;
-    }
-}
+
 
 /* 1. FEATURED POST */
 .featured-post-card {
