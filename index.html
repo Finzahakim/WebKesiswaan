@@ -41,8 +41,8 @@
         <h1 class="school-name hero-search-animate">SMA NEGERI 103 JAKARTA</h1>
 
         <div class="search-container hero-search-animate">
-            <input type="text" placeholder="cari informasi tentang kesiswaan" class="search-input">
-            <button class="search-button">Cari</button>
+            <input type="text" id="searchInput" placeholder="cari informasi tentang kesiswaan" class="search-input">
+            <button class="search-button" id="searchBtn">Cari</button>
         </div>
     </main>
 
@@ -994,6 +994,9 @@ Pararel 3 Kelas 11
     </div>
 </footer>
 
+<script src="https://cdn.jsdelivr.net/npm/fuse.js/dist/fuse.min.js"></script>
+
+
 <script>
     window.onload = () => {
         const carousel = document.querySelector('.profile-carousel');
@@ -1297,6 +1300,60 @@ if (kegiatanSection) {
     observer.observe(item);
     item.style.transitionDelay = `${index * 0.2}s`; // delay antar item
   });
+});
+
+// === SMART SEARCH NAVIGATOR (DENGAN FUZZY MATCH) ===
+document.getElementById("searchBtn").addEventListener("click", function() {
+  const input = document.getElementById("searchInput").value.trim().toLowerCase();
+
+  if (!input) return alert("Masukkan kata kunci dulu, bro!");
+
+  // daftar kata kunci dan tujuannya
+  const destinations = [
+    { keyword: "tata tertib", target: "#tatatertib" },
+    { keyword: "peraturan", target: "#tatatertib" },
+    { keyword: "disiplin", target: "#tatatertib" },
+    { keyword: "kegiatan", target: "#kegiatan" },
+    { keyword: "prestasi", target: "#kegiatan" },
+    { keyword: "ekskul", target: "#kegiatan" },
+    { keyword: "publikasi", target: "#tatatertib" },
+    { keyword: "tentang kami", target: "#tentang" },
+    { keyword: "visi", target: "#tentang" },
+    { keyword: "misi", target: "#tentang" },
+    { keyword: "kontak", target: "#kontak" },
+    { keyword: "hubungi", target: "#kontak" },
+    { keyword: "profil", target: "#profile" },
+  ];
+
+  // inisialisasi Fuse.js
+  const fuse = new Fuse(destinations, {
+    keys: ["keyword"],
+    threshold: 0.4, // semakin kecil makin ketat, 0.4 cocok buat typo ringan
+  });
+
+  const results = fuse.search(input);
+
+  if (results.length > 0) {
+    const target = results[0].item.target;
+
+    if (target.startsWith("#")) {
+      const section = document.querySelector(target);
+      if (section) {
+        section.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.location.href = target;
+    }
+  } else {
+    alert("Bagian itu belum ada, bro 😅");
+  }
+});
+
+// biar bisa tekan Enter juga
+document.getElementById("searchInput").addEventListener("keypress", function(e) {
+  if (e.key === "Enter") {
+    document.getElementById("searchBtn").click();
+  }
 });
 
 
