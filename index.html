@@ -26,33 +26,38 @@
                 <li><a href="#kegiatan" onclick="showSection('kegiatan')">KEGIATAN</a></li>
                 <li><a href="#tatatertib" onclick="showSection('tatatertib')">TATA TERTIB</a></li>
                 <li><a href="#publikasi" onclick="showSection('publikasi')">PUBLIKASI</a></li>
-                <li><a href="#" onclick="showSection('kontak')">KONTAK</a></li>
+                <li><a href="#kontak" onclick="showSection('kontak')">KONTAK</a></li>
             </ul>
         </nav>
     </header>
 
     <main class="hero-section">
-        
-        <h1 class="school-name">SMA NEGERI 103 JAKARTA</h1>
 
-        <div class="search-container">
+        <!-- floating decorative blobs -->
+        <div class="hero-blob blob-1" aria-hidden="true"></div>
+        <div class="hero-blob blob-2" aria-hidden="true"></div>
+
+        
+        <h1 class="school-name hero-search-animate">SMA NEGERI 103 JAKARTA</h1>
+
+        <div class="search-container hero-search-animate">
             <input type="text" placeholder="cari informasi tentang kesiswaan" class="search-input">
             <button class="search-button">Cari</button>
         </div>
     </main>
 
- <section id="about" class="about-section">
+ <section id="about" class="about-section hero-search-animate">
         <h2 class="section-title">TENTANG KESISWAAN SMAN 103 JAKARTA</h2>
         
         <div class="about-container">
 
-            <div class="about-content">
+            <div class="about-content about-left">
                 <div class="intro-section">
                     <p class="intro-text">
                         SMAN 103 Jakarta berdiri pada 6 Oktober 1989 di atas lahan seluas 4988 m². Awalnya bernama SMA Negeri Klender, sekolah ini diresmikan menjadi SMA Negeri 103 Jakarta pada 11 September 1990 oleh Gubernur DKI Jakarta, Bapak Wiyogo Atmodarminto. Kami berkomitmen untuk memberikan pendidikan berkualitas tinggi dengan kurikulum yang disesuaikan untuk memenuhi kebutuhan akademik dan non-akademik siswa.
                     </p>
 
-                    <div class="about-image-box">
+                    <div class="about-image-box about-right">
                         <img src="img/cecep.jpeg" alt="Gedung SMAN 103" class="about-image">
                     </div>
                 </div>
@@ -61,7 +66,7 @@
             </div>
 
             <h3 class="card-title">Visi & Misi Kami</h3>
-            <div class="vision-mission-grid">
+            <div class="vision-mission-grid visi-misi">
                 <div class="mission-box">
                     <div class="Visi">
                         <h4>Visi</h4>
@@ -181,16 +186,16 @@
 
     </section>
         <section id="kegiatan" class="activity-section">
-        <h2 class="section-title">Kegiatan dan Prestasi</h2>
+        <h2 class="section-title reveal">Kegiatan dan Prestasi</h2>
     
-        <div class="activity-tabs">
+        <div class="activity-tabs reveal">
             <button class="tab-button active" data-filter="all-activity">SEMUA</button>
             <button class="tab-button" data-filter="ekskul">EKSTRAKURIKULER</button>
             <button class="tab-button" data-filter="acara">ACARA SEKOLAH</button>
             <button class="tab-button" data-filter="prestasi">PRESTASI</button>
         </div>
     
-        <div class="activity-grid-container">
+        <div class="activity-grid-container kegiatan-filter">
 
             <div class="activity-card" data-category="ekskul">
   <div class="activity-image-box">
@@ -206,7 +211,7 @@
        target="_blank">Lihat Detail &rarr;
     </a>
   </div>
-</div>
+</div class="kegiatan-foto">
 
             <div class="activity-card" data-category="ekskul">
                 <div class="activity-image-box">
@@ -678,16 +683,16 @@ Pararel 3 Kelas 11
     </section>
 
     <section id="tatatertib" class="rules-section">
-        <h2 class="section-title">Tata Tertib Kesiswaan</h2>
+        <h2 class="section-title tata-tertib-item">Tata Tertib Kesiswaan</h2>
     
-        <div class="rules-container">
+        <div class="rules-container tata-tertib-item">
             <p class="rules-intro">
                 Setiap siswa SMAN 103 Jakarta wajib mematuhi seluruh peraturan yang berlaku. Klik pada topik di bawah ini untuk melihat detail dan panduan visual.
             </p>
     
             <div class="rules-accordion">
                 
-                <div class="accordion-item">
+                <div class="accordion-item tata-tertib-item">
     <button class="accordion-header">
         <span class="rule-title">1. Peraturan Seragam Sekolah</span>
         <span class="icon-toggle">+</span>
@@ -766,7 +771,7 @@ Pararel 3 Kelas 11
     </div>
 </div>
                 
-                <div class="accordion-item">
+                <div class="accordion-item tata-tertib-item">
                     <button class="accordion-header">
                         <span class="rule-title">2. Kewajiban Kehadiran dan Kedisiplinan</span>
                         <span class="icon-toggle">+</span>
@@ -791,7 +796,7 @@ Pararel 3 Kelas 11
                     </div>
                 </div>
                 
-                <div class="accordion-item">
+                <div class="accordion-item tata-tertib-item">
                     <button class="accordion-header">
                         <span class="rule-title">3. Etika dan Pergaulan</span>
                         <span class="icon-toggle">+</span>
@@ -810,7 +815,7 @@ Pararel 3 Kelas 11
                     </div>
                 </div>
                 
-                <div class="accordion-item">
+                <div class="accordion-item tata-tertib-item">
                     <button class="accordion-header">
                         <span class="rule-title">4. Menjaga Sarana dan Prasarana Sekolah</span>
                         <span class="icon-toggle">+</span>
@@ -906,7 +911,7 @@ Pararel 3 Kelas 11
         </div>
     </section>
 
-    <section class="contact-section">
+    <section id="kontak" class="contact-section">
     <div class="contact-container">
         
         <h2 class="section-title">Hubungi Kami</h2>
@@ -919,9 +924,9 @@ Pararel 3 Kelas 11
                     <p>Jangan ragu untuk menghubungi kami melalui detail di bawah ini atau tinggalkan pesan.</p>
                     
                     <ul class="detail-list">
-                        <li><strong>Alamat:</strong> Jl. Contoh No. 123, Jakarta Timur 13450</li>
-                        <li><strong>Telepon:</strong> (021) 12345678</li>
-                        <li><strong>Email:</strong> info@sekolahanda.sch.id</li>
+                        <li><strong>Alamat:</strong> Jl. Mawar Merah VI, Malaka Jaya</li>
+                        <li><strong>Telepon:</strong> +62 812-8336-3875</li>
+                        <li><strong>Email:</strong> SMAN 103 Jakarta@sekolah.sch.id</li>
                     </ul>
                 </div>
 
@@ -973,12 +978,12 @@ Pararel 3 Kelas 11
         <div class="footer-col contact-info-footer">
             <h4>Hubungi Kami</h4>
             <p>
-                Jl. Contoh No. 123<br>
-                Jakarta Timur 13450
+                Jl. Mawar Merah VI, Malaka Jaya<br>
+                Jakarta Timur 13460
             </p>
             <p>
-                Telp: (021) 12345678<br>
-                Email: info@sekolahanda.sch.id
+                Telp: +62 812-8336-3875<br>
+                Email: SMAN103Jakarta@sekolah.sch.id
             </p>
         </div>
 
@@ -1135,6 +1140,146 @@ document.querySelectorAll('.stat-number').forEach(stat => {
 
 // Pastikan skrip ini dipanggil saat halaman dimuat
     };
+
+    document.addEventListener('DOMContentLoaded', () => {
+  /* --- ripple effect for search button --- */
+  const searchBtn = document.querySelector('.search-button');
+  if (searchBtn) {
+    searchBtn.addEventListener('click', function (e) {
+      const rect = this.getBoundingClientRect();
+      const x = e.clientX - rect.left;
+      const y = e.clientY - rect.top;
+      const ripple = document.createElement('span');
+      ripple.className = 'ripple';
+      ripple.style.left = (x - 10) + 'px';
+      ripple.style.top = (y - 10) + 'px';
+      ripple.style.width = ripple.style.height = '20px';
+      this.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 650);
+    });
+  }
+
+  /* --- autoplay carousel (pause on hover) --- */
+  const carousel = document.querySelector('.profile-carousel');
+  let autoScrollTimer = null;
+  if (carousel) {
+    const step = () => {
+      const max = carousel.scrollWidth - carousel.clientWidth;
+      const next = Math.min(carousel.scrollLeft + Math.round(carousel.clientWidth * 0.55), max);
+      if (carousel.scrollLeft >= max - 2) {
+        carousel.scrollTo({ left: 0, behavior: 'smooth' });
+      } else {
+        carousel.scrollTo({ left: next, behavior: 'smooth' });
+      }
+    };
+    autoScrollTimer = setInterval(step, 3200);
+
+    carousel.addEventListener('mouseenter', () => clearInterval(autoScrollTimer));
+    carousel.addEventListener('mouseleave', () => {
+      autoScrollTimer = setInterval(step, 3200);
+    });
+  }
+
+  /* --- reveal on scroll using IntersectionObserver --- */
+  const revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.classList.add('revealed');
+          io.unobserve(e.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    revealEls.forEach(el => io.observe(el));
+  } else {
+    // fallback
+    revealEls.forEach(el => el.classList.add('revealed'));
+  }
+
+  /* --- stats counter (count-up) --- */
+  const statEls = document.querySelectorAll('.stat-number');
+  statEls.forEach(el => {
+    const target = +el.getAttribute('data-target') || +el.textContent || 0;
+    el.textContent = '0';
+    const duration = 1500; // ms
+    let started = false;
+
+    const startCounting = () => {
+      if (started) return;
+      started = true;
+      const start = performance.now();
+      const step = (now) => {
+        const progress = Math.min((now - start) / duration, 1);
+        const value = Math.floor(progress * target);
+        el.textContent = value;
+        if (progress < 1) {
+          requestAnimationFrame(step);
+        } else {
+          el.textContent = target;
+          el.classList.add('animate');
+          setTimeout(()=> el.classList.remove('animate'), 700);
+        }
+      };
+      requestAnimationFrame(step);
+    };
+
+    // start when visible
+    if ('IntersectionObserver' in window) {
+      const obs = new IntersectionObserver((entries) => {
+        entries.forEach(en => { if (en.isIntersecting) { startCounting(); obs.disconnect(); } });
+      }, { threshold: 0.4 });
+      obs.observe(el);
+    } else startCounting();
+  });
+
+});
+
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+      }
+    });
+  }, { threshold: 0.15 });
+
+  // daftar semua animasi section
+  const animatedSections = document.querySelectorAll(
+    '.hero-animate, .about-animate, .profile-animate, .activity-animate, .stats-animate, .footer-animate'
+  );
+  animatedSections.forEach(el => observer.observe(el));
+});
+
+
+document.addEventListener('DOMContentLoaded', () => {
+  const observer = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('revealed');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.15 });
+
+  // HERO: hanya search bar
+  document.querySelectorAll('.hero-search-animate').forEach(el => observer.observe(el));
+
+  // TENTANG KAMI: kiri, kanan, visi misi
+  document.querySelectorAll('.about-left, .about-right, .visi-misi').forEach(el => observer.observe(el));
+
+  // KEGIATAN: filter + foto
+  document.querySelectorAll('.kegiatan-filter, .kegiatan-foto').forEach(el => observer.observe(el));
+
+  // PUBLIKASI: tiap item muncul satu-satu (staggered delay)
+  const tataTertibItems = document.querySelectorAll('.tata-tertib-item');
+  tataTertibItems.forEach((item, index) => {
+    observer.observe(item);
+    item.style.transitionDelay = `${index * 0.2}s`; // delay antar item
+  });
+});
+
+
 </script>
 
 
