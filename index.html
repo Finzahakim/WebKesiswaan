@@ -33,7 +33,6 @@
 
     <main class="hero-section">
 
-        <!-- floating decorative blobs -->
         <div class="hero-blob blob-1" aria-hidden="true"></div>
         <div class="hero-blob blob-2" aria-hidden="true"></div>
 
@@ -561,7 +560,7 @@
                     <h4 class="activity-title">Kegiatan Apel Penerimaan Tamu Penegak Pramuka</h4>
                     <p class="activity-date">27 Agustus 2025</p>
                     <p class="activity-description">Kegiatan Pramuka Penegak SMAN 103 berfokus pada pembentukan karakter, kemandirian, dan semangat kebangsaan.</p>
-                    <a href="https://www.instagram.com/p/DOaxCiekk_u/?igsh=MXRiNnE1dnZibDJ5eQ=="read-more-btn">Lihat Detail &rarr;</a>
+                    <a href="https://www.instagram.com/p/DOaxCiekk_u/?igsh=MXRiNnE1dnZibDJ5eQ==" class="read-more-btn">Lihat Detail &rarr;</a>
                 </div>
             </div>
 
@@ -574,7 +573,7 @@
                     <h4 class="activity-title">Sapa PRABU SMA Negeri 103 Jakarta</h4>
                     <p class="activity-date">30 September 2025</p>
                     <p class="activity-description">Kegiatan Sapa Prabu (Pelajar Duta Tramtibun Jakarta) merupakan program kolaborasi antara Satpol PP DKI Jakarta dan SMAN 103 Jakarta yang bertujuan membentuk pelajar sebagai duta ketertiban dan keamanan lingkungan sekolah serta masyarakat.</p>
-                    <a href="https://www.instagram.com/p/DPOmSIYEwx8/?igsh=MWVxYm5wbHllazc3bQ=="read-more-btn">Lihat Detail &rarr;</a>
+                    <a href="https://www.instagram.com/p/DPOmSIYEwx8/?igsh=MWVxYm5wbHllazc3bQ==" class="read-more-btn">Lihat Detail &rarr;</a>
                 </div>
             </div>
         
@@ -769,7 +768,7 @@ Pararel 3 Kelas 11
             </div> 
             </div>
     </div>
-</div>
+</div>	
                 
                 <div class="accordion-item tata-tertib-item">
                     <button class="accordion-header">
@@ -858,7 +857,7 @@ Pararel 3 Kelas 11
                     <span class="news-tag highlight">Pengumuman Penting</span>
                     <h3 class="featured-title">Persiapan Pemilihan Ketua Osis dan MPK Tahun Ajaran Baru</h3>
                     <p class="featured-date">16 Oktober 2025</p>
-                    <p class="featured-summary">Sekolah mengumumkan jadwal lengkap simulasi Asesmen Nasional Berbasis Komputer (ANBK). Semua siswa kelas XI wajib hadir sesuai jadwal yang tertera di papan pengumuman. Simulasi ini penting sebagai tolok ukur kesiapan infrastruktur dan mental siswa.</p>
+                    <p class="featured-summary">Sekolah mengadakan pemilihan Ketua OSIS dan MPK tahun ajaran 2025/2026. Seluruh siswa wajib menggunakan hak pilihnya untuk memilih pilhannya masing-masing</p>
                     <a href="#" class="read-more-btn feature-link">Baca Selengkapnya &rarr;</a>
                 </div>
             </div>
@@ -1011,23 +1010,19 @@ Pararel 3 Kelas 11
         const leftArrow = document.querySelector('.nav-arrow.left');
         const rightArrow = document.querySelector('.nav-arrow.right');
 
-        // Nilai offset untuk looping (harus SAMA dengan scroll-padding-left di CSS)
+       
         const getOffsetValue = () => {
-             // Desktop: 75px (dari 70px + 5px margin), Mobile: 20px (dari 15px + 5px margin)
             return window.innerWidth > 900 ? 75 : 20;
         };
 
-        // Hitungan geser (250px lebar kartu + 30px gap) * 1.5
         const cardWidthWithGap = 280; 
         const scrollDistance = cardWidthWithGap * 1.5; 
         const tolerance = 5; 
 
-        // Fungsi Geser KANAN (Looping)
         rightArrow.addEventListener('click', () => {
             const maxScrollLeft = carousel.scrollWidth - carousel.clientWidth;
 
             if (carousel.scrollLeft >= maxScrollLeft - tolerance) { 
-                // Jika mentok kanan, kembali ke posisi awal (scroll 0, ditahan scroll-padding)
                 carousel.scrollTo({
                     left: 0, 
                     behavior: 'smooth'
@@ -1040,13 +1035,10 @@ Pararel 3 Kelas 11
             }
         });
 
-        // Fungsi Geser KIRI (Looping)
         leftArrow.addEventListener('click', () => {
             const offset = getOffsetValue();
             
-            // JIKA SUDAH MENTOK KIRI (berada di posisi 0, ditahan oleh scroll-padding di 75px/20px)
             if (carousel.scrollLeft <= offset + tolerance) { 
-                // Loop ke kartu terakhir (posisi terjauh)
                 carousel.scrollTo({
                     left: carousel.scrollWidth, 
                     behavior: 'smooth'
@@ -1059,7 +1051,6 @@ Pararel 3 Kelas 11
             }
         });
         
-        // Script untuk Tab Filtering Kegiatan (TETAP ADA)
         const activityTabButtons = document.querySelectorAll('.activity-tabs .tab-button');
         const activityCards = document.querySelectorAll('.activity-card');
 
@@ -1073,7 +1064,7 @@ Pararel 3 Kelas 11
                 activityCards.forEach(card => {
                     const category = card.getAttribute('data-category');
                     if (filter === 'all-activity' || category === filter) {
-                        card.style.display = 'flex'; // Tampilkan sebagai flex
+                        card.style.display = 'flex'; 
                     } else {
                         card.style.display = 'none';
                     }
@@ -1082,36 +1073,28 @@ Pararel 3 Kelas 11
         });
 
 
-        // Script untuk Accordion Tata Tertib
+    
         const accordionHeaders = document.querySelectorAll('.accordion-header');
 
         accordionHeaders.forEach(header => {
             header.addEventListener('click', () => {
-                const content = header.nextElementSibling; // Mengambil div .accordion-content
+                const content = header.nextElementSibling; 
                 
-                // Cek apakah konten saat ini sudah terbuka
+                
                 const isOpen = content.classList.contains('open');
 
-                // Tutup semua konten accordion
+               
                 document.querySelectorAll('.accordion-content').forEach(c => c.classList.remove('open'));
                 document.querySelectorAll('.accordion-header').forEach(h => h.classList.remove('active'));
 
-                // Jika konten saat ini tadi tertutup (isOpen = false), maka buka konten ini
+                
                 if (!isOpen) {
                     content.classList.add('open');
                     header.classList.add('active');
                 }
-                
-                // Hapus atau jadikan komentar bagian yang membuat scrolling otomatis:
-                /*
-                setTimeout(() => {
-                     header.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }, 450);
-                */
             });
         });
 
-// Tambahkan fungsi ini di dalam window.onload = () => { ... } yang sudah ada
 
 const startCounter = (entries, observer) => {
     entries.forEach(entry => {
@@ -1119,8 +1102,8 @@ const startCounter = (entries, observer) => {
             const element = entry.target;
             const target = parseInt(element.getAttribute('data-target'));
             let current = 0;
-            const duration = 2000; // 2 detik
-            const step = target / (duration / 10); // Hitung langkah per 10ms
+            const duration = 2000; 
+            const step = target / (duration / 10); 
 
             const updateCounter = () => {
                 current += step;
@@ -1128,8 +1111,8 @@ const startCounter = (entries, observer) => {
                     element.textContent = Math.ceil(current);
                     requestAnimationFrame(updateCounter);
                 } else {
-                    element.textContent = target; // Pastikan angkanya tepat di akhir
-                    observer.unobserve(element); // Stop mengamati setelah selesai hitung
+                    element.textContent = target; 
+                    observer.unobserve(element); 
                 }
             };
 
@@ -1138,22 +1121,17 @@ const startCounter = (entries, observer) => {
     });
 };
 
-// Pengaturan Intersection Observer
 const statObserver = new IntersectionObserver(startCounter, {
-    root: null, // Mengamati viewport
-    threshold: 0.5 // Mulai menghitung saat 50% elemen terlihat
+    root: null, 
+    threshold: 0.5 
 });
 
-// Amati setiap elemen statistik
 document.querySelectorAll('.stat-number').forEach(stat => {
     statObserver.observe(stat);
 });
-
-// Pastikan skrip ini dipanggil saat halaman dimuat
     };
 
     document.addEventListener('DOMContentLoaded', () => {
-  /* --- ripple effect for search button --- */
   const searchBtn = document.querySelector('.search-button');
   if (searchBtn) {
     searchBtn.addEventListener('click', function (e) {
@@ -1170,7 +1148,6 @@ document.querySelectorAll('.stat-number').forEach(stat => {
     });
   }
 
-  /* --- autoplay carousel (pause on hover) --- */
   const carousel = document.querySelector('.profile-carousel');
   let autoScrollTimer = null;
   if (carousel) {
@@ -1191,7 +1168,6 @@ document.querySelectorAll('.stat-number').forEach(stat => {
     });
   }
 
-  /* --- reveal on scroll using IntersectionObserver --- */
   const revealEls = document.querySelectorAll('.reveal');
   if ('IntersectionObserver' in window) {
     const io = new IntersectionObserver((entries) => {
@@ -1204,11 +1180,9 @@ document.querySelectorAll('.stat-number').forEach(stat => {
     }, { threshold: 0.12 });
     revealEls.forEach(el => io.observe(el));
   } else {
-    // fallback
     revealEls.forEach(el => el.classList.add('revealed'));
   }
 
-  /* --- stats counter (count-up) --- */
   const statEls = document.querySelectorAll('.stat-number');
   statEls.forEach(el => {
     const target = +el.getAttribute('data-target') || +el.textContent || 0;
@@ -1235,7 +1209,6 @@ document.querySelectorAll('.stat-number').forEach(stat => {
       requestAnimationFrame(step);
     };
 
-    // start when visible
     if ('IntersectionObserver' in window) {
       const obs = new IntersectionObserver((entries) => {
         entries.forEach(en => { if (en.isIntersecting) { startCounting(); obs.disconnect(); } });
@@ -1255,7 +1228,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.15 });
 
-  // daftar semua animasi section
   const animatedSections = document.querySelectorAll(
     '.hero-animate, .about-animate, .profile-animate, .activity-animate, .stats-animate, .footer-animate'
   );
@@ -1273,23 +1245,19 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }, { threshold: 0.15 });
 
-  // HERO: hanya search bar
   document.querySelectorAll('.hero-search-animate').forEach(el => observer.observe(el));
 
-  // TENTANG KAMI: kiri, kanan, visi misi
   document.querySelectorAll('.about-left, .about-right, .visi-misi').forEach(el => observer.observe(el));
 
-  // KEGIATAN: filter + foto
   const kegiatanSection = document.querySelector('#kegiatan');
 if (kegiatanSection) {
   const kegiatanObserver = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // kasih sedikit jeda biar CSS transition kebaca
         setTimeout(() => {
           kegiatanSection.querySelectorAll('.kegiatan-filter, .kegiatan-foto')
             .forEach(el => el.classList.add('revealed'));
-        }, 80); // ⬅️ 80ms delay = animasi zoom jadi kebaca
+        }, 80); 
         kegiatanObserver.unobserve(entry.target);
       }
     });
@@ -1302,21 +1270,18 @@ if (kegiatanSection) {
 }
 
 
-  // PUBLIKASI: tiap item muncul satu-satu (staggered delay)
   const tataTertibItems = document.querySelectorAll('.tata-tertib-item');
   tataTertibItems.forEach((item, index) => {
     observer.observe(item);
-    item.style.transitionDelay = `${index * 0.2}s`; // delay antar item
+    item.style.transitionDelay = `${index * 0.2}s`; 
   });
 });
 
-// === SMART SEARCH NAVIGATOR (DENGAN FUZZY MATCH) ===
 document.getElementById("searchBtn").addEventListener("click", function() {
   const input = document.getElementById("searchInput").value.trim().toLowerCase();
 
   if (!input) return alert("Masukkan kata kunci dulu, bro!");
 
-  // daftar kata kunci dan tujuannya
   const destinations = [
     { keyword: "tata tertib", target: "#tatatertib" },
     { keyword: "peraturan", target: "#tatatertib" },
@@ -1333,10 +1298,9 @@ document.getElementById("searchBtn").addEventListener("click", function() {
     { keyword: "profil", target: "#profile" },
   ];
 
-  // inisialisasi Fuse.js
   const fuse = new Fuse(destinations, {
     keys: ["keyword"],
-    threshold: 0.4, // semakin kecil makin ketat, 0.4 cocok buat typo ringan
+    threshold: 0.4, 
   });
 
   const results = fuse.search(input);
@@ -1357,16 +1321,12 @@ document.getElementById("searchBtn").addEventListener("click", function() {
   }
 });
 
-// biar bisa tekan Enter juga
 document.getElementById("searchInput").addEventListener("keypress", function(e) {
   if (e.key === "Enter") {
     document.getElementById("searchBtn").click();
   }
 });
-
-
 </script>
-
 
 </body>
 </html>
